@@ -1,36 +1,46 @@
 body {
     display: grid;
     grid-template-areas: "header header header header"
-    "nav nav nav nav"
-    "main main main main"
-    "footer footer footer footer";
+        "nav nav nav nav"
+        "main main main main"
+        "footer footer footer footer";
     min-height: 100vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #8498c2;
     margin: 0;
     padding: 0;
 }
-    
+
 ul {
     list-style-type: none;
 }
 
+
 a {
     text-decoration: none;
 }
-header {grid-area: header;
 
-margin: 0;
-padding-right: 0px;}
+header {
+    grid-area: header;
 
-.imagHeader {width: 70px;}
+    margin: 0;
+    padding-right: 0px;
+}
+
+.imagHeader {
+    width: 70px;
+}
 
 header nav {
     background-color: #4775D1;
     inline-size: 100%;
     width: 100%;
 }
-nav {grid-area: nav;}
+
+nav {
+    grid-area: nav;
+}
+
 nav ul li {
     display: inline-block;
     margin: 20px;
@@ -54,6 +64,7 @@ main {
     background-color: rgb(121, 151, 207);
     color: rgb(255, 255, 255);
 }
+
 
 .ConteinerQuienes {
     display: flex;
@@ -92,8 +103,12 @@ footer {
     color: #033E8C;
     position: relative;
 }
-img {max-width: 100%;
-    height: auto;}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 Footer a {
     color: black;
 }
@@ -102,7 +117,7 @@ Footer a {
     width: 30x;
     height: 30px;
 }
-    
+
 footer iframe {
     margin-top: 5px;
     width: 200px;
@@ -117,7 +132,7 @@ h1 {
 
 .autogestion {
     display: grid;
-    
+
     grid-template-rows: 350px 350px;
     grid-auto-flow: column;
     gap: 10px;
@@ -142,11 +157,12 @@ h1 {
     margin: 50px;
 }
 
-.conteiner { display: grid;
+.conteiner {
+    display: grid;
     grid-template-columns: 300px 300px;
-    grid-template-rows: 200px 200px ;
+    grid-template-rows: 200px 200px;
     background-color: #eaeced;
-    
+
 }
 
 .FOTOPERFIL {
@@ -173,10 +189,19 @@ article ul {
 article h3 {
     text-align: center;
 }
+.formularioDecontacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
 
 form {
-    width: 300px;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px
 }
 
 label {
