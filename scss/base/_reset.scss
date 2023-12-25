@@ -1,0 +1,32 @@
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header header header header"
+        "nav nav nav nav"
+        "main main main main"
+        "footer footer footer footer";
+    min-height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #8498c2;
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width: 1023px) {
+    .imagenredes {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .FOTOPERFIL {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

@@ -1,0 +1,59 @@
+.ConteinerQuienes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.video {
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.Perfiles {
+    width: 400px;
+    height: 400px;
+    color: rgb(255, 255, 255);
+    background-color: #658ca3;
+    display: inline-block;
+    border-radius: 20px;
+    margin: 50px;
+    text-align: center;
+
+}
+
+.conteinerServicios {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 200px 200px;
+    background-color: #eaeced;
+
+
+}
+
+.FOTOPERFIL {
+    width: 400px;
+    height: 225px;
+    display: inline-block;
+}
+
+.tarjeta {
+    background-color: rgb(209, 211, 212);
+    box-shadow: 10px 15px 20px grey;
+    border-radius: 15px;
+    width: 250px;
+    height: 150px;
+    padding: 0px;
+    margin-top: 20px;
+}
+.autogestion {
+    display: grid;
+
+    grid-template-rows: 350px 350px;
+    grid-auto-flow: column;
+    gap: 10px;
+}

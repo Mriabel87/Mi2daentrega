@@ -1,0 +1,36 @@
+.menuFooter {
+    margin: 20px;
+}
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    align-content: space-between;
+    padding: 50px;
+    background-color: rgb(190, 188, 188);
+    width: 100%;
+    color: #033E8C;
+    position: relative;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+Footer a {
+    color: black;
+}
+.imagenredes {
+    width: 30x;
+    height: 30px;
+}
+footer iframe {
+    margin-top: 5px;
+    width: 200px;
+    height: 100px;
+}
+article ul {
+    text-align: center;
+    color: black;
+}

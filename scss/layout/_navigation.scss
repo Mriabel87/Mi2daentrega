@@ -1,0 +1,14 @@
+nav {
+    grid-area: nav;
+}
+nav ul li {
+    display: inline-block;
+    margin: 20px;
+}
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+nav a {
+    color: #eaeced;
+}

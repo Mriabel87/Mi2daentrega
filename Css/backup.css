@@ -1,0 +1,263 @@
+body {
+    display: grid;
+    grid-template-areas: "header header header header"
+        "nav nav nav nav"
+        "main main main main"
+        "footer footer footer footer";
+    min-height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #8498c2;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+header {
+    grid-area: header;
+
+    margin: 0;
+    padding-right: 0px;
+}
+
+.imagHeader {
+    width: 70px;
+}
+
+header nav {
+    background-color: #4775D1;
+    inline-size: 100%;
+    width: 100%;
+}
+
+nav {
+    grid-area: nav;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav a {
+    color: #eaeced;
+}
+
+main {
+    grid-area: main;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0px;
+    margin: 0;
+    background-color: rgb(121, 151, 207);
+    color: rgb(255, 255, 255);
+}
+
+
+.ConteinerQuienes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+Div p {
+    margin: 20px;
+}
+
+footer h2 {
+    text-align: justify;
+    position: absolute;
+    top: 15px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+.menuFooter {
+    margin: 20px;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    align-content: space-between;
+    padding: 50px;
+    background-color: rgb(190, 188, 188);
+    width: 100%;
+    color: #033E8C;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+Footer a {
+    color: black;
+}
+
+.imagenredes {
+    width: 30x;
+    height: 30px;
+}
+
+footer iframe {
+    margin-top: 5px;
+    width: 200px;
+    height: 100px;
+}
+
+h1 {
+    color: #033E8C;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+.autogestion {
+    display: grid;
+
+    grid-template-rows: 350px 350px;
+    grid-auto-flow: column;
+    gap: 10px;
+}
+
+.video {
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.Perfiles {
+    width: 400px;
+    height: 400px;
+    color: rgb(255, 255, 255);
+    background-color: #658ca3;
+    display: inline-block;
+    border-radius: 20px;
+    margin: 50px;
+    text-align: center;
+
+}
+
+.conteinerServicios {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 200px 200px;
+    background-color: #eaeced;
+
+
+}
+
+.FOTOPERFIL {
+    width: 400px;
+    height: 225px;
+    display: inline-block;
+}
+
+.tarjeta {
+    background-color: rgb(209, 211, 212);
+    box-shadow: 10px 15px 20px grey;
+    border-radius: 15px;
+    width: 250px;
+    height: 150px;
+    padding: 0px;
+    margin-top: 20px;
+
+
+
+}
+
+article ul {
+    text-align: center;
+    color: black;
+}
+
+article h3 {
+    text-align: center;
+}
+
+.formularioDecontacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #00639c;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 10px;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+@media screen and (max-width: 1023px) {
+    .imagenredes {
+    max-width: 100%;
+    height: auto;
+}
+.FOTOPERFIL {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+}
