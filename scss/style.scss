@@ -7,11 +7,35 @@
 @import "layout/navigation";
 @import "layout/footer";
 
+#servi {
+    .conteinerServicios {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
 
 
+        .tarjeta {
+            background-color: #4775D1;
+            box-shadow: 10px 15px 20px grey;
+            border-radius: 15px;
+            width: 250px;
+            height: 200px;
+            padding: 0px;
+            margin-top: 20px;
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
 
+            h3 {
+                margin-bottom: 10px;
+            }
 
-
-
-
-
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+}
