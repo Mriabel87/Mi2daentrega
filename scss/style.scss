@@ -11,12 +11,12 @@
 
 #servi {
     .conteinerServicios {
-        @include flex (baseline);
+        display: flex;
         flex-direction: row;
+        align-items: baseline;
         flex-wrap: wrap;
         text-align: center;
         justify-content: space-around;
-
 
         .tarjeta {
             background-color: #4775D1;
