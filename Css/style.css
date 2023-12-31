@@ -125,9 +125,19 @@ label {
 }
 
 input {
-  width: 100%;
+  width: 260px;
   padding: 8px;
   margin-bottom: 15px;
+}
+
+#boton {
+  border-radius: 5px;
+  background-color: #6f93dc;
+  color: rgb(255, 255, 255);
+}
+#boton:hover {
+  background-color: rgb(61, 134, 198);
+  border: #052341;
 }
 
 .faq-container {
@@ -279,6 +289,11 @@ article ul {
 }
 #servi .conteinerServicios .tarjeta p {
   font-size: 12px;
+}
+#servi .conteinerServicios .tarjeta:hover {
+  background-color: rgb(124, 146, 255);
+  width: 300px;
+  height: 250px;
 }
 
 /*# sourceMappingURL=style.css.map */
