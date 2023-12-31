@@ -27,10 +27,19 @@ body {
     align-items: center;
   }
 }
+@media screen and (max-width: 500px) {
+  .imagenredes {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    height: auto;
+  }
+}
 h1 {
   color: #033E8C;
   margin-bottom: 30px;
   margin-left: 50px;
+  font-size: 50PX;
 }
 
 Div p {
@@ -77,19 +86,6 @@ article h3 {
   text-align: center;
 }
 
-.conteinerServicios {
-  background-color: #eaeced;
-}
-.conteinerServicios .tarjeta {
-  background-color: rgb(209, 211, 212);
-  box-shadow: 10px 15px 20px grey;
-  border-radius: 15px;
-  width: 250px;
-  height: 150px;
-  padding: 0px;
-  margin-top: 20px;
-}
-
 .FOTOPERFIL {
   width: 400px;
   height: 225px;
@@ -123,18 +119,18 @@ label {
   margin-bottom: 10px;
 }
 
-input {
+input, .boton {
   width: 260px;
   padding: 8px;
   margin-bottom: 15px;
 }
 
-#boton {
+.boton {
   border-radius: 5px;
   background-color: #6f93dc;
   color: rgb(255, 255, 255);
 }
-#boton:hover {
+.boton:hover {
   background-color: rgb(61, 134, 198);
   border: #052341;
 }
@@ -163,22 +159,6 @@ input {
   display: block;
 }
 
-.imagHeader {
-  width: 70px;
-}
-
-header nav {
-  background-color: #4775D1;
-  inline-size: 100%;
-  width: 100%;
-}
-
-header {
-  grid-area: header;
-  margin: 0;
-  padding-right: 0px;
-}
-
 body {
   display: grid;
   grid-template-areas: "header header header header" "nav nav nav nav" "main main main main" "footer footer footer footer";
@@ -187,6 +167,19 @@ body {
   background-color: #8498c2;
   margin: 0;
   padding: 0;
+}
+body header {
+  grid-area: header;
+  margin: 0;
+  padding-right: 0px;
+}
+body header .imagHeader {
+  width: 70px;
+}
+body header nav {
+  background-color: #4775D1;
+  inline-size: 100%;
+  width: 100%;
 }
 
 main {
@@ -214,15 +207,10 @@ nav ul li {
   margin: 20px;
 }
 
-.menuFooter {
-  margin: 20px;
-}
-
 footer {
   grid-area: footer;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-direction: nowrap;
   align-items: baseline;
   align-content: space-between;
   padding: 50px;
@@ -231,30 +219,25 @@ footer {
   color: #033E8C;
   position: relative;
 }
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-Footer a {
+footer a {
   color: black;
 }
-
-.imagenredes {
-  width: 30x;
-  height: 30px;
+footer .menuFooter {
+  margin: 20px;
 }
-
 footer iframe {
   margin-top: 5px;
   width: 200px;
   height: 100px;
 }
+footer .imagenredes {
+  width: 30x;
+  height: 30px;
+}
 
-article ul {
-  text-align: center;
-  color: black;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 #servi .conteinerServicios {

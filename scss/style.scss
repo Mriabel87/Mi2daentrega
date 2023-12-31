@@ -16,6 +16,7 @@
         text-align: center;
         justify-content: space-around;
 
+
         .tarjeta {
             background-color: #4775D1;
             box-shadow: 10px 15px 20px grey;
@@ -38,8 +39,6 @@
             &:hover {background-color: rgb(124, 146, 255);
                 width: 300px;
                 height: 250px;}
-        
-
         }
     }
 }
