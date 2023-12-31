@@ -1,3 +1,4 @@
+@import "abstrat/mixin";
 @import "base/reset";
 @import "base/tipografia";
 @import "components/cards";
@@ -7,12 +8,12 @@
 @import "layout/navigation";
 @import "layout/footer";
 
+
 #servi {
     .conteinerServicios {
-        display: flex;
+        @include flex (baseline);
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: center;
         text-align: center;
         justify-content: space-around;
 
@@ -36,9 +37,12 @@
             p {
                 font-size: 12px;
             }
-            &:hover {background-color: rgb(124, 146, 255);
+
+            &:hover {
+                background-color: rgb(124, 146, 255);
                 width: 300px;
-                height: 250px;}
+                height: 250px;
+            }
         }
     }
 }
