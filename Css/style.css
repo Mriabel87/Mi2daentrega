@@ -80,14 +80,7 @@ article h3 {
 .conteinerServicios {
   background-color: #eaeced;
 }
-
-.FOTOPERFIL {
-  width: 400px;
-  height: 225px;
-  display: inline-block;
-}
-
-.tarjeta {
+.conteinerServicios .tarjeta {
   background-color: rgb(209, 211, 212);
   box-shadow: 10px 15px 20px grey;
   border-radius: 15px;
@@ -95,6 +88,12 @@ article h3 {
   height: 150px;
   padding: 0px;
   margin-top: 20px;
+}
+
+.FOTOPERFIL {
+  width: 400px;
+  height: 225px;
+  display: inline-block;
 }
 
 .autogestion {
@@ -148,17 +147,14 @@ input {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
-
-.faq-item {
+.faq-container .accordion .faq-item {
   margin-bottom: 20px;
 }
-
-.faq-question {
+.faq-container .accordion .faq-item .faq-question {
   font-weight: bold;
   cursor: pointer;
 }
-
-.faq-answer {
+.faq-container .accordion .faq-item .faq-question .faq-answer {
   display: none;
   margin-top: 10px;
 }
@@ -206,19 +202,16 @@ main {
 nav {
   grid-area: nav;
 }
-
-nav ul li {
-  display: inline-block;
-  margin: 20px;
+nav a {
+  color: #eaeced;
 }
-
 nav ul {
   list-style: none;
   text-align: center;
 }
-
-nav a {
-  color: #eaeced;
+nav ul li {
+  display: inline-block;
+  margin: 20px;
 }
 
 .menuFooter {

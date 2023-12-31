@@ -29,6 +29,15 @@
 
 .conteinerServicios {
     background-color: #eaeced;
+    .tarjeta {
+        background-color: rgb(209, 211, 212);
+        box-shadow: 10px 15px 20px grey;
+        border-radius: 15px;
+        width: 250px;
+        height: 150px;
+        padding: 0px;
+        margin-top: 20px;
+    }
 }
 
 .FOTOPERFIL {
@@ -37,15 +46,6 @@
     display: inline-block;
 }
 
-.tarjeta {
-    background-color: rgb(209, 211, 212);
-    box-shadow: 10px 15px 20px grey;
-    border-radius: 15px;
-    width: 250px;
-    height: 150px;
-    padding: 0px;
-    margin-top: 20px;
-}
 
 .autogestion {
     display: grid;
