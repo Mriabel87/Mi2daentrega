@@ -123,6 +123,12 @@ input, .boton {
   width: 260px;
   padding: 8px;
   margin-bottom: 15px;
+  transition: all 2s;
+}
+
+input:focus, .boton:focus {
+  width: 360px;
+  font-size: 20px;
 }
 
 .boton {
@@ -206,6 +212,9 @@ nav ul li {
   display: inline-block;
   margin: 20px;
 }
+nav .imagHeader {
+  transition: height 4s, width 4s;
+}
 
 footer {
   grid-area: footer;
@@ -232,7 +241,7 @@ footer iframe {
   height: 100px;
 }
 footer .imagenredes {
-  width: 30x;
+  width: 30px;
   height: 30px;
 }
 
@@ -250,11 +259,11 @@ img {
   justify-content: space-around;
 }
 #servi .conteinerServicios .tarjeta {
+  width: 250px;
+  height: 200px;
   background-color: #4775D1;
   box-shadow: 10px 15px 20px grey;
   border-radius: 15px;
-  width: 250px;
-  height: 200px;
   padding: 0px;
   margin-top: 20px;
   margin: 20px;

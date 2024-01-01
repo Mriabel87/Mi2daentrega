@@ -1,6 +1,5 @@
 nav {
     grid-area: nav;
-
     a {
         color: #eaeced;
     }
@@ -14,5 +13,7 @@ nav {
             margin: 20px;
         }
     }
+    
+    .imagHeader {transition: height 4s,width 4s;}
 
 }

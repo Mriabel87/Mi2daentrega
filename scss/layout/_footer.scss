@@ -13,24 +13,17 @@ footer {
     a {
         color: black;
     }
-
     .menuFooter {
         margin: 20px;
     }
-
     iframe {
         margin-top: 5px;
-        width: 200px;
-        height: 100px;
+        @include tamanio (200px,100px);
     }
-
     .imagenredes {
-        width: 30x;
-        height: 30px;
+        @include tamanio (30px,30px);
     }
 }
-
-
 img {
     max-width: 100%;
     height: auto;
