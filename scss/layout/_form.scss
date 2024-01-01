@@ -3,14 +3,18 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
+    margin: 0px;
+    margin-top: 100px;
 }
 
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 500px
+    width: 90%;
+    max-width: 500px;
+    padding-top: 50px;
+    margin-bottom: 50px;
 }
 
 label {
@@ -34,4 +38,5 @@ input:focus {width: 360px; font-size: 20px;}
     color: rgb(255, 255, 255);
     &:hover{background-color: rgb(61, 134, 198);
     border: #052341;}
+    margin-bottom: 100px;
 }
