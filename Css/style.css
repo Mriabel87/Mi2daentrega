@@ -17,6 +17,33 @@ body {
 }
 
 @media screen and (max-width: 1023px) {
+  footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: nowrap;
+    align-items: baseline;
+    align-content: space-between;
+    padding: 50px;
+    background-color: rgb(190, 188, 188);
+    width: 100%;
+    color: #033E8C;
+    position: relative;
+  }
+  footer a {
+    color: black;
+  }
+  footer .menuFooter {
+    margin: 20px;
+  }
+  footer iframe {
+    margin-top: 5px;
+    width: 200px;
+    height: 100px;
+  }
+  footer .imagenredes {
+    width: 30px;
+    height: 30px;
+  }
   form {
     padding-top: 360px;
   }
@@ -31,16 +58,39 @@ body {
   }
 }
 @media screen and (max-width: 500px) {
-  .imagenredes {
-    display: flex;
-    flex-direction: row;
+  body {
+    grid-template-areas: "header" "nav" "main" "footer";
+  }
+  footer {
+    padding: 20px;
+    /* Adjust the padding for better spacing on smaller screens */
+    flex-direction: column;
+    /* Stack items in the footer vertically on smaller screens */
+  }
+  footer .menuFooter {
+    margin: 10px;
+    /* Adjust margin for better spacing */
+  }
+  footer iframe {
+    width: 100%;
+    /* Make the map iframe take full width on smaller screens */
+    height: 200px;
+    /* Adjust the height for better visibility */
   }
 }
+.imagenredes {
+  display: flex;
+  flex-direction: row;
+  width: 20px;
+  /* agrego para mobile w y h-Adjust the size of social media icons */
+  height: 20px;
+}
+
 h1 {
   color: #033E8C;
   margin-bottom: 30px;
-  margin-left: 50px;
-  font-size: 50PX;
+  font-size: 30px; /* CAMBIO MARGIN -LEFT 50 X 10 Y FONT SIZE 50 POR 30PX Adjust the font size */
+  margin-left: 10px;
 }
 
 Div p {
@@ -186,12 +236,16 @@ body header {
   padding-right: 0px;
 }
 body header .imagHeader {
-  width: 70px;
+  width: 50px;
+  /* Cambio 70px por 50px -Adjust the logo size for smaller screens */
 }
 body header nav {
   background-color: #4775D1;
   inline-size: 100%;
   width: 100%;
+  background-color: #4775D1;
+  padding: 10px;
+  /* Add some padding to the navigation bar */
 }
 
 main {
@@ -227,7 +281,6 @@ footer {
   display: flex;
   flex-direction: nowrap;
   align-items: baseline;
-  flex-direction: nowrap;
   align-content: space-between;
   padding: 50px;
   background-color: rgb(190, 188, 188);
