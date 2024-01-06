@@ -20,10 +20,10 @@ footer {
         @include tamanio (200px,100px);
     }
     .imagenredes {
-        @include tamanio (30px,30px);
+        @include tamanio (20px,20px);
+        display: flex;
+        flex-direction: row;
+        /* agrego para mobile w y h-Adjust the size of social media icons */
     }
 }
-img {
-    max-width: 100%;
-    height: auto;
-}
+

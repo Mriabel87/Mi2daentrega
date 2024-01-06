@@ -45,7 +45,7 @@ body {
     height: 30px;
   }
   form {
-    padding-top: 360px;
+    padding-top: 250px;
   }
   .imagenredes {
     display: flex;
@@ -55,6 +55,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .autogestion {
+    grid-template-rows: auto auto;
+    /* Adjust the grid rows for smaller screens */
+    grid-auto-flow: row;
+    /* Change the flow to a single column for better stacking */
+    gap: 20px;
+    /* Increase the gap for better spacing */
+  }
+  .autogestion .video {
+    margin: 0;
+    /* Reset margins for videos */
   }
 }
 @media screen and (max-width: 500px) {
@@ -77,19 +89,15 @@ body {
     height: 200px;
     /* Adjust the height for better visibility */
   }
+  .autogestion {
+    grid-template-rows: auto;
+    /* Adjust the grid rows for mobile screens */
+  }
 }
-.imagenredes {
-  display: flex;
-  flex-direction: row;
-  width: 20px;
-  /* agrego para mobile w y h-Adjust the size of social media icons */
-  height: 20px;
-}
-
 h1 {
   color: #033E8C;
   margin-bottom: 30px;
-  font-size: 30px; /* CAMBIO MARGIN -LEFT 50 X 10 Y FONT SIZE 50 POR 30PX Adjust the font size */
+  font-size: 30px;
   margin-left: 10px;
 }
 
@@ -117,15 +125,6 @@ article h3 {
   text-align: center;
 }
 
-.video {
-  text-align: center;
-  padding: 20px;
-  margin-top: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-
 .Perfiles {
   width: 400px;
   height: 400px;
@@ -145,9 +144,18 @@ article h3 {
 
 .autogestion {
   display: grid;
-  grid-template-rows: 350px 350px;
+  grid-template-rows: 300px 300px;
   grid-auto-flow: column;
   gap: 10px;
+}
+.autogestion .video {
+  text-align: center;
+  padding: 20px;
+  margin: 10px auto;
+  margin-top: 10px;
+}
+.autogestion .video iframe {
+  width: 100%;
 }
 
 .formularioDecontacto {
@@ -237,7 +245,6 @@ body header {
 }
 body header .imagHeader {
   width: 50px;
-  /* Cambio 70px por 50px -Adjust the logo size for smaller screens */
 }
 body header nav {
   background-color: #4775D1;
@@ -300,13 +307,11 @@ footer iframe {
   height: 100px;
 }
 footer .imagenredes {
-  width: 30px;
-  height: 30px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  /* agrego para mobile w y h-Adjust the size of social media icons */
 }
 
 #servi .conteinerServicios {

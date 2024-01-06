@@ -32,22 +32,27 @@ body {
         width: 100%;
         color: #033E8C;
         position: relative;
+
         a {
             color: black;
         }
+
         .menuFooter {
             margin: 20px;
         }
+
         iframe {
             margin-top: 5px;
-            @include tamanio (200px,100px);
+            @include tamanio (200px, 100px);
         }
+
         .imagenredes {
-            @include tamanio (30px,30px);
+            @include tamanio (30px, 30px);
         }
     }
+
     form {
-        padding-top: 360px;
+        padding-top: 250px;
     }
 
     .imagenredes {
@@ -60,6 +65,20 @@ body {
         justify-content: center;
         align-items: center;
     }
+
+    .autogestion {
+        grid-template-rows: auto auto;
+        /* Adjust the grid rows for smaller screens */
+        grid-auto-flow: row;
+        /* Change the flow to a single column for better stacking */
+        gap: 20px;
+
+        /* Increase the gap for better spacing */
+        .video {
+            margin: 0;
+            /* Reset margins for videos */
+        }
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -70,17 +89,18 @@ body {
             "main"
             "footer";
     }
+
     footer {
         padding: 20px;
         /* Adjust the padding for better spacing on smaller screens */
         flex-direction: column;
         /* Stack items in the footer vertically on smaller screens */
-    
+
         .menuFooter {
             margin: 10px;
             /* Adjust margin for better spacing */
         }
-    
+
         iframe {
             width: 100%;
             /* Make the map iframe take full width on smaller screens */
@@ -88,13 +108,9 @@ body {
             /* Adjust the height for better visibility */
         }
     }
-    
-}
 
-.imagenredes {
-    display: flex;
-    flex-direction: row;
-    width: 20px;
-    /* agrego para mobile w y h-Adjust the size of social media icons */
-    height: 20px;
+    .autogestion {
+        grid-template-rows: auto;
+        /* Adjust the grid rows for mobile screens */
+    }
 }

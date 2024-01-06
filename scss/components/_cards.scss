@@ -6,17 +6,10 @@
     text-align: center;
 }
 
-.video {
-    text-align: center;
-    padding: 20px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
+
 
 .Perfiles {
-    @include tamanio (400px,400px);
+    @include tamanio (400px, 400px);
     color: rgb(255, 255, 255);
     background-color: #658ca3;
     display: inline-block;
@@ -36,8 +29,16 @@
 
 .autogestion {
     display: grid;
-
-    grid-template-rows: 350px 350px;
+    grid-template-rows: 300px 300px;
     grid-auto-flow: column;
     gap: 10px;
+
+    .video {
+        text-align: center;
+        padding: 20px;
+        margin: 10px auto;
+        margin-top: 10px;
+        
+        iframe { width: 100%;}
+    }
 }
