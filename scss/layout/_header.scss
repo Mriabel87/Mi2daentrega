@@ -39,3 +39,10 @@ main {
     background-color: rgb(121, 151, 207);
     color: rgb(255, 255, 255);
 }
+#main-novedades {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+  
+  }

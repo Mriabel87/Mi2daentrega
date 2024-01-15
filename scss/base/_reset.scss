@@ -65,23 +65,15 @@ body {
         justify-content: center;
         align-items: center;
     }
-
-    .autogestion {
-        grid-template-rows: auto auto;
-        /* Adjust the grid rows for smaller screens */
-        grid-auto-flow: row;
-        /* Change the flow to a single column for better stacking */
-        gap: 20px;
-
-        /* Increase the gap for better spacing */
-        .video {
-            margin: 0;
-            /* Reset margins for videos */
-        }
+    #main-novedades {
+        grid-template-columns: 1fr;
     }
+    
 }
 
 @media screen and (max-width: 500px) {
+    
+
     body {
         grid-template-areas:
             "header"
@@ -109,8 +101,5 @@ body {
         }
     }
 
-    .autogestion {
-        grid-template-rows: auto;
-        /* Adjust the grid rows for mobile screens */
-    }
+
 }
